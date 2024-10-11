@@ -7,18 +7,31 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li> 
+        <li><a href="/blog">Blog</a></li> 
+      </ul>
+    </nav>
     <div>
-      <img src="/me.jpeg" alt="Ben" width="150px" />
+      <img class="me-img" src="/me.jpeg" alt="Ben" width="150px" />
       <h1>About Me</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit
-        sapien.
+        I'm a software engineer based in the U.S. I've done development across the stack—from systems to UI.
+        Recently, I decided to take a break a explore some open source projects. 
+        I'm passionate about interesting problems in math and technology. 
       </p>
     </div>
 
-    <h2>Recent Blog Posts</h2>
-    <ul id="recent-posts-list"></ul>
+    <div class="social-links">
+      <a href="https://github.com/benchaplin" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/ben-chaplin" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/bennychah" target="_blank">Twitter</a>
+    </div>
 
-    <script src="/blog.js"></script>
+    <h2>Recent Blog Posts</h2>
+    <ul id="blog-list"></ul>
+
+    <script src="/blog-list.js"></script>
   </body>
 </html>

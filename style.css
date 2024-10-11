@@ -1,14 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 20px auto; /* Auto margins will center the content horizontally */
+  max-width: 800px;   /* Set the maximum width of the content */
+  padding: 0 20px;    /* Optional padding to add space on smaller screens */
 }
 
-ul {
+nav {
+  background-color: rgb(239, 239, 239);
+  padding: 10px;
+}
+
+nav ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
-a {
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
   text-decoration: none;
-  color: #000;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+ text-decoration: underline;
+}
+
+.me-img {
+  margin-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.blog-post {
+  margin-bottom: 50px;
+}
+
+.hljs {
+  background: rgb(245, 245, 245) !important;
 }
