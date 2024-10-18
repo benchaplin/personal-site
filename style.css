@@ -5,6 +5,10 @@ body {
   padding: 0 20px;    /* Optional padding to add space on smaller screens */
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
 nav {
   background-color: rgb(239, 239, 239);
   padding: 10px;
