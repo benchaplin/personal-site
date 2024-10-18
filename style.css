@@ -44,6 +44,10 @@ nav ul li a:hover {
   margin-bottom: 50px;
 }
 
+code {
+  background: rgb(245, 245, 245) !important;
+}
+
 .hljs {
   background: rgb(245, 245, 245) !important;
 }

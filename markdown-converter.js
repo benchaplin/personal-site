@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const postName = window.location.pathname.split("/blog/")[1];
   const response = await fetch(`/posts/${postName}.md`);
+
+  if (!response.ok) {
+    document.getElementById("blog-post").innerHTML = `<h1>Post not found</h1>`;
+    return;
+  }
+
   const mdContent = await response.text();
 
   const metadataRegex = /^---\n([\s\S]+?)\n---/;
