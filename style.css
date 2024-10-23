@@ -1,17 +1,18 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px auto; /* Auto margins will center the content horizontally */
-  max-width: 800px;   /* Set the maximum width of the content */
-  padding: 0 20px;    /* Optional padding to add space on smaller screens */
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
 nav {
-  background-color: rgb(239, 239, 239);
   padding: 10px;
 }
 
@@ -33,16 +34,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 .me-img {
   margin-top: 20px;
-}
-
-.social-links {
-  display: flex;
-  gap: 15px;
 }
 
 .blog-post {

@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     return metadata;
   }
-  
+
   const blogList = document.getElementById("blog-list");
   if (blogList) {
     sortedFiles.forEach(async file => {
