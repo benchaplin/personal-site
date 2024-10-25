@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const blogList = document.getElementById("blog-list");
   if (blogList) {
-    sortedFiles.forEach(async file => {
+    for (const file of sortedFiles) {
       const metadata = await extractMetadata(file);
       const listItem = document.createElement("li");
       listItem.innerHTML = `<a href="/blog/${file.replace(".md", "")}">${metadata.title} (<em>${metadata.date}</em>)</a>`;
       blogList.appendChild(listItem);
-    });
+    }
   }
 });
