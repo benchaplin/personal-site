@@ -40,4 +40,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   hljs.highlightAll();
+
+  MathJax.typesetPromise([blogPostElement]);
 });

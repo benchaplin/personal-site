@@ -61,7 +61,7 @@ Documentation time. We need to figure out how JavaCC actually matches our input 
 
 Let's check out what these terms mean in the context of an example. The breaking example here is a double backslash followed by a space. Instead of working through the input `dir/file.txt\\ dir/image.png`, I'll use a simpler input of `fo\\ ba` to keep this concise. Let's see how JavaCC parses file paths from this input:
 
-![Parser diagram](https://ben-chaplin.com/image/parser1.svg)
+![Parser diagram](/image/parser1.svg)
 
 Remember our definition of the `PATH_CHAR` token: `< PATH_CHAR: (~[" "] | "\\"~[])+ >`, so we have two "options" separated by an "OR." I've labeled these **o1** and **o2** (note: because **o2** parses two characters, I've labeled the second check as **o2 cont.**). If the character on the left (y-axis) matches the option, I write a ✅. If not, it's an ❌. 
 - We work from the **top-down**.
@@ -90,6 +90,6 @@ TOKEN : {
 
 The addition of `"\\"` to the negated character set `~[" ", "\\"]` should do the trick. We need to make sure backslashes are *only* parsed as escape characters, not as single characters. Check out the process now:
 
-![New parser diagram](https://ben-chaplin.com/image/parser2.svg)
+![New parser diagram](/image/parser2.svg)
 
 The key step is at the parsing of the first backslash. It can no longer match against **o1**, so **o2** is the only option. This gives us the behavior we want: escape characters are *always* applied to the following character. 
