@@ -137,17 +137,25 @@ $$\lfloor -\ln(unif(0,1)) \cdot m_L \rfloor$$
 3. Search from the entry point until we reach `nodeLevel`, then for each level below, add connections considering the closest 2 (level > 0) / 4 (level 0) nodes.
 	1. Level 1 (candidates from closest to farthest = \[0, 5, 3\])
 		1. Add edge (6, 0).
+			1. Now node 0 has more than $M = 2$ edges, we need to remove the _**least diverse:** the farthest non-diverse neighbor._ Consider the neighbors as candidates and order them closest to farthest = \[6, 5, 3\].
+				1. 6 is diverse.
+				2. 5 is not diverse.
+				3. 3 is the **_farthest_** not diverse, so remove (0, 3).
 		2. Add edge (6, 5)? Yes, it's diverse compared to 0.
+			1. Now node 5 has more than $M = 2$ edges, we need to remove the least diverse. The neighbors (closest to farthest) = \[3, 6, 0\]
+				1. 3 is diverse.
+				2. 5 is diverse.
+				3. 0 is the farthest not diverse, so remove (5, 0).
 		3. Add edge (6, 3)? No, it's the same direction as 5.
 	2. Level 0 (candidates from closest to farthest = \[0, 1, 5, 4, 3, 2\])
 		1. Add edge (6, 0).
 		2. Add edge (6, 1)? Yes, it's diverse compared to 0.
-			1. Now node 1 has more than $2M = 4$ edges, we need to remove the _**least diverse:** the farthest non-diverse neighbor_. Consider the neighbors as candidates and order them closest to farthest = \[5, 4, 6, 3, 0\]
+			1. Now node 1 has more than $2M = 4$ edges, we need to remove the least diverse. Consider the neighbors as candidates and order them closest to farthest = \[5, 4, 6, 3, 0\]
 				1. 5 is diverse.
 				2. 4 is not diverse.
 				3. 6 is diverse.
 				4. 3 is not diverse.
-				5. 0 is **_farthest_** not diverse, so remove (1, 0).
+				5. 0 is the farthest not diverse, so remove (1, 0).
 		3. Add edge (6, 5)? No, it's the same direction as 1.
 		4. Add edge (6, 4)? No, it's the same direction as 1.
 		5. Add edge (6, 3)? No, it's the same direction as 1.
