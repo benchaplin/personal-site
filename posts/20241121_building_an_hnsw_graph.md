@@ -11,7 +11,7 @@ Recently, I've been learning about [Hierarchical Navigable Small World (HNSW) gr
 
 In order to test my knowledge and build some real confidence, I worked out a couple examples. I figured I'd share one on how an HNSW is built. Maybe it'll be useful for someone out there learning about HNSW graphs. "Teaching" (kinda) this also solidifies my own understanding. So here we go.
 
-I've been interested in HNSWs in the context of [Lucene](https://lucene.apache.org/), so I'll be referring to its implementation of HNSWs (my example actually builds on [this specific test](https://github.com/apache/lucene/blob/6fe8165/lucene/core/src/test/org/apache/lucene/util/hnsw/HnswGraphTestCase.java#L740)). Its algorithms do differ from those originally published in a few ways, but those differences will not be relevant in this example. 
+I've been interested in HNSWs in the context of [Lucene](https://lucene.apache.org/), so I'll be referring to its implementation of HNSWs (my example actually builds on [this specific test](https://github.com/apache/lucene/blob/6fe8165/lucene/core/src/test/org/apache/lucene/util/hnsw/HnswGraphTestCase.java#L740)). Lucene's algorithms differ from the original HNSW paper in a few ways, the most notable being that Lucene treats an HNSW as a directed graph, whereas the paper implies it is undirected. However, I'll set aside that detail for simplicity.
 
 We'll be working with the following vectors on the unit circle:
 
