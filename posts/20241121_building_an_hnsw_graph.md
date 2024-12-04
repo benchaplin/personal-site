@@ -15,7 +15,7 @@ I've been interested in HNSWs in the context of [Lucene](https://lucene.apache.o
 
 We'll be working with the following vectors on the unit circle:
 
-| label | radians | x-value | y-value |
+| label | π-radians | x-value | y-value |
 | ----- | ------- | ------- | ------- |
 | 0     | 0.5     | 0       | 1       |
 | 1     | 0.75    | -0.71   | 0.71    |
