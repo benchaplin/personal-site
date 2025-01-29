@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const blogList = document.getElementById("blog-list");
   if (blogList) {
-    for (const file of sortedFiles) {
+    for (const file of filesToShow) {
       const metadata = await extractMetadata(file);
       const listItem = document.createElement("li");
       listItem.innerHTML = `<a href="/blog/${file.replace(".md", "")}">${metadata.title} (<em>${metadata.date}</em>)</a>`;
