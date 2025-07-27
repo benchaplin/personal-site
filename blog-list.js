@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const sortedFiles = files.sort((a, b) => b.localeCompare(a));
   const isHomePage = window.location.pathname.endsWith("index.html") || window.location.pathname === "/";
-  const filesToShow = isHomePage ? sortedFiles.slice(0, 5) : sortedFiles;
+  const filesToShow = isHomePage ? sortedFiles.slice(0, 10) : sortedFiles;
 
   async function extractMetadata(file) {
     const response = await fetch(`/posts/${file}`);
