@@ -20,7 +20,7 @@ I do this all the time, almost always by putting each of my fingers on my keyboa
 1. The original query string (to handle cases where my fingers are not lost) 
 2. The query string shifted left (to handle cases where my fingers are all off to the right)
 
-It's a simple approach. I'm relying on a couple assumptions with this approach:
+<a name="assumptions"></a>It's a simple approach. I'm relying on a couple assumptions with this approach:
 1. If a query is typed correctly, it's "left-shifted" translation is gibberish, and not something else entirely.
 2. A "right-shifted" query is gibberish.
 If one of these is not true, we may get false positives. 
@@ -158,4 +158,4 @@ Results for: hendrix
 
 ---
 
-I figured while I was writing it that the "assumptions" in [my plan](#the-plan) had some counterexamples... let me know if you think of any!
+I figured while I was writing it that the [assumptions](#assumptions) I made earlier had some counterexamples... let me know if you think of any!
