@@ -68,3 +68,8 @@ code {
 .melink:visited {
   color: black;
 }
+
+.external-site {
+  font-size: 0.8em;
+  color: #555;
+}
