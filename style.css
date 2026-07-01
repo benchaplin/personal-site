@@ -60,12 +60,12 @@ nav ul li a:hover {
 
 code,
 pre {
-  background: #ece7dd !important;
+  background: rgb(245, 245, 245) !important;
   font-size: 0.9rem;
 }
 
 .hljs {
-  background: #ece7dd !important;
+  background: rgb(245, 245, 245) !important;
 }
 
 .melink {
