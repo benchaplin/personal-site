@@ -1,25 +1,15 @@
 html {
   min-height: 100vh;
-  background: repeating-linear-gradient(
-    90deg,
-    #7a8c6a 0,
-    #7a8c6a 8px,
-    #9a9a8a 8px,
-    #9a9a8a 16px
-  );
   background-attachment: fixed;
 }
 
 body {
   font-family: Arial, sans-serif;
   font-size: 1.1rem;
-  background: #f5f0e8;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 800px;
   min-height: 100vh;
-  box-sizing: border-box;
   padding: 40px 60px 60px;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 hr {
@@ -68,7 +58,8 @@ nav ul li a:hover {
   margin-bottom: 50px;
 }
 
-code, pre {
+code,
+pre {
   background: #ece7dd !important;
   font-size: 0.9rem;
 }
