@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#fef6e4"/>
+  <text x="50%" y="50%" dy="0.02em" text-anchor="middle" dominant-baseline="central"
+        font-family="'Courier New', Courier, monospace" font-weight="700"
+        font-size="300" fill="#7c8a6a" letter-spacing="-8">bc</text>
+</svg>

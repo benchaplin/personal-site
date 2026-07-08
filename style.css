@@ -1,8 +1,17 @@
+html {
+  background-color: #fef6e4;
+  background-image: url("/image/bg-topography.svg");
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 20px auto;
-  max-width: 800px;
-  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 50px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 hr {
