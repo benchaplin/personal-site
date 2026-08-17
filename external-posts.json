@@ -1,5 +1,10 @@
 [
   {
+    "title": "How Elasticsearch's batched query phase improves search performance at scale",
+    "date": "2026-08-10",
+    "url": "https://www.elastic.co/search-labs/blog/elasticsearch-batched-query-phase"
+  },
+  {
     "title": "Elasticsearch Replica Management in Serverless",
     "date": "2026-06-11",
     "url": "https://www.elastic.co/search-labs/blog/elasticsearch-replica-management-serverless"
