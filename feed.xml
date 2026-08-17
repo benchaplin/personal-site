@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ben Chaplin</title>
+    <link>https://ben-chaplin.com</link>
+    <description>Writing about problems in tech and math.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Aug 2026 17:24:54 GMT</lastBuildDate>
+    <atom:link href="https://ben-chaplin.com/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Elasticsearch&apos;s batched query phase improves search performance at scale (outside link)</title>
+      <link>https://www.elastic.co/search-labs/blog/elasticsearch-batched-query-phase</link>
+      <guid isPermaLink="true">https://www.elastic.co/search-labs/blog/elasticsearch-batched-query-phase</guid>
+      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
+      <description>Bettering Elasticsearch query time and resource utilization by batching shard queries.</description>
+    </item>
+    <item>
+      <title>Elasticsearch Replica Management in Serverless (outside link)</title>
+      <link>https://www.elastic.co/search-labs/blog/elasticsearch-replica-management-serverless</link>
+      <guid isPermaLink="true">https://www.elastic.co/search-labs/blog/elasticsearch-replica-management-serverless</guid>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+      <description>How Elasticsearch Serverless combines two automated systems: one for failover resilience, one for search load balancing.</description>
+    </item>
+    <item>
+      <title>Search for Lost Hands</title>
+      <link>https://ben-chaplin.com/blog/20250727_search_for_lost_hands</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20250727_search_for_lost_hands</guid>
+      <pubDate>Sun, 27 Jul 2025 00:00:00 GMT</pubDate>
+      <description>Building a fun little Lucene search that works when your fingers drift on the keyboard.</description>
+    </item>
+    <item>
+      <title>Correlation is Hard</title>
+      <link>https://ben-chaplin.com/blog/20250128_correlation_is_hard</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20250128_correlation_is_hard</guid>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 GMT</pubDate>
+      <description>Generating a filter that hits a target selectivity and correlation turns out to be trickier than it sounds, so I work through a numeric approach to get there.</description>
+    </item>
+    <item>
+      <title>Building a Bigger HNSW Graph</title>
+      <link>https://ben-chaplin.com/blog/20241204_building_a_bigger_hnsw_graph</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20241204_building_a_bigger_hnsw_graph</guid>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 GMT</pubDate>
+      <description>A follow-up that scales the HNSW example up and ties off the loose ends: how candidate lists are built and what the efConst (beamWidth) parameter actually does.</description>
+    </item>
+    <item>
+      <title>Building an HNSW Graph</title>
+      <link>https://ben-chaplin.com/blog/20241121_building_an_hnsw_graph</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20241121_building_an_hnsw_graph</guid>
+      <pubDate>Thu, 21 Nov 2024 00:00:00 GMT</pubDate>
+      <description>A hands-on walkthrough of building a Hierarchical Navigable Small World graph from scratch, inserting vectors one by one.</description>
+    </item>
+    <item>
+      <title>Just-in-time Loop Unrolling</title>
+      <link>https://ben-chaplin.com/blog/20241106_jit_loop_unrolling</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20241106_jit_loop_unrolling</guid>
+      <pubDate>Wed, 06 Nov 2024 00:00:00 GMT</pubDate>
+      <description>Unpacking why Lucene&apos;s dot-product code accumulates in chunks of four, and how loop unrolling and the JIT combine to make it faster.</description>
+    </item>
+    <item>
+      <title>Lightweight Search in the Browser with Lunr</title>
+      <link>https://ben-chaplin.com/blog/20241021_lightweight_search_in_the_browser_with_lunr</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20241021_lightweight_search_in_the_browser_with_lunr</guid>
+      <pubDate>Mon, 21 Oct 2024 00:00:00 GMT</pubDate>
+      <description>Adding a real search bar to a static, backend-less site by scraping your own pages at build time and indexing them client-side with Lunr.</description>
+    </item>
+    <item>
+      <title>JavaCC and LL(1) Parsers</title>
+      <link>https://ben-chaplin.com/blog/20241014_javacc_and_ll1_parsers</link>
+      <guid isPermaLink="true">https://ben-chaplin.com/blog/20241014_javacc_and_ll1_parsers</guid>
+      <pubDate>Mon, 14 Oct 2024 00:00:00 GMT</pubDate>
+      <description>Chasing down a backslash-escaping bug in an Apache Lucene grammar, and what JavaCC&apos;s LL(1) token matching taught me about why it happened.</description>
+    </item>
+  </channel>
+</rss>

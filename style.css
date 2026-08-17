@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   background: #ffffff;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06), 0 8px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.08), 0 10px 25px rgba(0, 0, 0, 0.12), 0 30px 60px rgba(0, 0, 0, 0.14);
 }
 
 hr {
